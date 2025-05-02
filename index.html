@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sorry Ishu</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+      background: url(./Cute-Kitty-Home-Screen.png) no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+    h1 {
+      font-size: 3rem;
+      color: #ff0055;
+      text-shadow: 2px 2px #000000;
+      animation: popUp 1s ease forwards;
+    }
+    h2 {
+      font-size: 1.8rem;
+      color: #ff006a;
+      text-shadow: 2px 2px #000000;
+      margin-top: 1rem;
+      animation: slideIn 1.5s ease forwards;
+    }
+    .box {
+      margin-top: 2rem;
+      background: #ffffffcc;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      width: 80%;
+      max-width: 500px;
+      animation: fadeUp 1s ease-in-out;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #ff4da6;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+    button:hover {
+      background-color: #e60073;
+      transform: scale(1.05);
+    }
+    #sorry-line {
+      margin-top: 15px;
+      font-size: 1.3rem;
+      color: #99004d;
+      min-height: 70px;
+      line-height: 1.4;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes popUp {
+      0% { transform: scale(0.5); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    @keyframes slideIn {
+      0% { transform: translateY(-30px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeUp {
+      0% { transform: translateY(40px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <h1>💖 Hey Ishu 💖</h1>
+  <h2>I'm Very Sorry... Ananuga 100 00 Saari 💌</h2>
+  <div class="box">
+    <button onclick="showSorry()">💘 Akkhash said Sorry 💘</button>
+    <div id="sorry-line"></div>
+  </div>
+  <script>
+    const sorryLines = [
+      "I'm sorry bestie... but you're way too cute to be mad at me! 💞",
+      "Forgive me, or else I’ll keep flooding you with compliments! 💋",
+      "Sorry for being silly—your smile is my weakness 💗",
+      "You're my favorite notification in life. 📱💖",
+      "Apologies, but you're glowing more than my future with you 🌟",
+      "I’m lucky to have a bestie who looks like a literal angel 😇",
+      "Forgive me, cutie—or else I'm spamming you with heart emojis 😍",
+      "Okay, I messed up. But you gotta admit, we’re adorable together 💑",
+      "You're so fine, even my sorrys are blushing 😘",
+      "Oops... I goofed. Wanna punish me with a hug date? 🫂",
+      "Your smile = peace. My mistake = war. Let's choose peace! ☮️💕",
+      "Let’s skip the drama and get back to romantic chaos 💃🕺",
+      "Sorry for the oopsie... but your laugh fixes everything 😂💓",
+      "I’ll say sorry 100 times if I can steal 1 smile from you 💯😊",
+      "Forgive me or I’ll keep being a cute mess for you 🤭💘",
+      "You're not just special—you’re heart-meltingly magical 🪄💝",
+      "You + Me = Too much cuteness for the world 🌍💫",
+      "Sorry bestie... you're still my fav chapter in life 📖💗",
+      "I promise to be less annoying... but I can't stop being charming 😏",
+      "Let’s turn this sorry into a sweet memory together 🍬💞"
+    ];
+
+    function showSorry() {
+      const random = Math.floor(Math.random() * sorryLines.length);
+      document.getElementById("sorry-line").innerText = sorryLines[random];
+    }
+  </script>
+</body>
+</html>
